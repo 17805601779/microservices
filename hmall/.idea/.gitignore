@@ -6,3 +6,6 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+# 忽略所有 .class 文件
+/cart-service
+*.class
