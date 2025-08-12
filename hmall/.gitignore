@@ -1,2 +1,4 @@
 # 忽略所有 .class 文件
 *.class
+*.log
+target/
