@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.Collection;
 import java.util.List;
 
+
 /**
  * <p>
  * 商品表 服务实现类
@@ -39,6 +40,11 @@ public class ItemServiceImpl extends ServiceImpl<ItemMapper, Item> implements II
 
     @Override
     public List<ItemDTO> queryItemByIds(Collection<Long> ids) {
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         return BeanUtils.copyList(listByIds(ids), ItemDTO.class);
     }
 }

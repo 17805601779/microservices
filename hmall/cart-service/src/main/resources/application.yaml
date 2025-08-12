@@ -1,5 +1,11 @@
 server:
   port: 8083
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8090
+      http-method-specify: true # 开启请求方式前缀
 feign:
   okhttp:
     enabled: true # 开启OKHttp连接池支持
