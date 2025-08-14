@@ -1,53 +1,8 @@
-# Maven
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-
-
-# IDE - IntelliJ IDEA
+# IntelliJ IDEA project files
 .idea/
-*.iml
-*.ipr
-*.iws
-out/
 
-# IDE - Eclipse
-.project
-.classpath
-.settings/
-bin/
-
-
-# Logs
+# Log files
 logs/
-*.log
-*.log.*
-hs_err_pid*
-replay_pid*
 
-# OS generated files
-.DS_Store
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Temporary files
-*.tmp
-*.swp
-*.swo
-
-# Java
-*.class
-
-# Linux-specific
-*~
-
-# Docker
-*.pid
-docker-data/
+# Maven build directories (target folder in parent and submodules)
+**/target/
